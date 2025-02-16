@@ -1,0 +1,10 @@
+C:\Users\azhah\source\repos\KinectDepthConsoleProject\KinectDepthConsoleProject\bin\Debug\KinectDepthConsoleProject.exe.config
+C:\Users\azhah\source\repos\KinectDepthConsoleProject\KinectDepthConsoleProject\bin\Debug\KinectDepthConsoleProject.exe
+C:\Users\azhah\source\repos\KinectDepthConsoleProject\KinectDepthConsoleProject\bin\Debug\KinectDepthConsoleProject.pdb
+C:\Users\azhah\source\repos\KinectDepthConsoleProject\KinectDepthConsoleProject\bin\Debug\Microsoft.Kinect.dll
+C:\Users\azhah\source\repos\KinectDepthConsoleProject\KinectDepthConsoleProject\bin\Debug\Microsoft.Kinect.xml
+C:\Users\azhah\source\repos\KinectDepthConsoleProject\KinectDepthConsoleProject\obj\Debug\KinectDepthConsoleProject.csproj.AssemblyReference.cache
+C:\Users\azhah\source\repos\KinectDepthConsoleProject\KinectDepthConsoleProject\obj\Debug\KinectDepthConsoleProject.csproj.CoreCompileInputs.cache
+C:\Users\azhah\source\repos\KinectDepthConsoleProject\KinectDepthConsoleProject\obj\Debug\KinectDe.3ADEDEC5.Up2Date
+C:\Users\azhah\source\repos\KinectDepthConsoleProject\KinectDepthConsoleProject\obj\Debug\KinectDepthConsoleProject.exe
+C:\Users\azhah\source\repos\KinectDepthConsoleProject\KinectDepthConsoleProject\obj\Debug\KinectDepthConsoleProject.pdb
