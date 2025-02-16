@@ -10,38 +10,51 @@ def write_to_serial(ser):
         while i > 60: 
             i -= 10
 
-            time.sleep(1)
+            data = ser.readline().decode('utf-8').strip()
+            oldata = data
+            while len(data) != 0:
+                oldata = data
+                data = ser.readline().decode('utf-8').strip()
 
-
-            data = float(ser.readline().decode('utf-8').strip())
-            
-            print(data)
-
+            if len(oldata) == 0:
+                data = 1000 
+            else:
+                data = float(oldata)
+                print(data)
             # this data is the distance from the ultrasonic sensor
 
-            if data < 10:
-                motors = [i, 127, 85, 180]
+            if data < 30:
+                motors = [i - 10, 150, 85, 180]
                 out = f"{motors[0]},{motors[1]},{motors[2]},{motors[3]}"
                 ser.write(( out + '\n').encode('utf-8'))
+                # data = float(ser.readline().decode('utf-8').strip())
 
-                time.sleep(5)
 
-                motors = [i, 127, 85, 0]
+                time.sleep(2)
+
+                motors = [i - 10, 150, 85, 0]
                 out = f"{motors[0]},{motors[1]},{motors[2]},{motors[3]}"
                 ser.write(( out + '\n').encode('utf-8'))
+                # data = float(ser.readline().decode('utf-8').strip())
 
-                time.sleep(5)
+                time.sleep(2)
 
-                motors = [180, 0, 85, 150]
+                motors = [180, 30, 140, 150]
                 out = f"{motors[0]},{motors[1]},{motors[2]},{motors[3]}"
                 ser.write(( out + '\n').encode('utf-8'))
+                # data = float(ser.readline().decode('utf-8').strip())
 
                 break
 
-            
             motors = [i, 85, 85, 180]
             out = f"{motors[0]},{motors[1]},{motors[2]},{motors[3]}"
             ser.write(( out + '\n').encode('utf-8'))
+            time.sleep(1)
+
+            
+            # motors = [i, 85, 85, 180]
+            # out = f"{motors[0]},{motors[1]},{motors[2]},{motors[3]}"
+            # ser.write(( out + '\n').encode('utf-8'))
 
 if __name__ == "__main__":
     try:
