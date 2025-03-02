@@ -1,4 +1,4 @@
-# RoboArm
+# Quicker Picker Upper
 The Quicker Picker Upper is a robotic arm equipped with depth sensing that detects objects in a garbage collection area. It automatically identifies, sorts, and disposes of waste into the appropriate bins. The robotic arm has three degrees of rotation (X, Y, Z) that allow it to swivel and maneuver efficiently.
 
 ## Inspiration
